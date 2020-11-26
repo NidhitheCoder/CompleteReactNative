@@ -46,3 +46,18 @@
 - If you need to return multiple line JSX block (or multiple elements) then you can choose 2 ways:
     1. Use ().
     2. Put Opening tag in the same line of return keyword.
+
+### FlatList elements
+ - Turns an array into a list of elements
+ - It have two properties(props): data and renderItem
+ - You must provide key for each items in the list
+
+ - 2 different ways for provide key property:
+    i). Put a 'key' property to the array item objects.({name:"Sara",key:"1"}).
+        Key must be in string type and it must me unique.
+    ii). Add a property named keyExtractor.
+        keyExtractor = {(friend)=>{friend.name}}  . you can use a unique value field as key in this method
+- Horizontal property helps to scroll horizontally.
+- showsHorizontalScrollIndicator={false}  helps to avoid scollbar at the bottom of the app.
+- marginVertical for vertical padding or gap between items.
+- marginHorizontal for vertical padding or gap between items.
