@@ -3,25 +3,23 @@ import { View, Text, StyleSheet, FlatList } from "react-native";
 
 const ListComponents = () => {
   const friends = [
-    { name: "Smith" },
-    { name: "July" },
-    { name: "Sara" },
-    { name: "Starc" },
-    { name: "Elizabeth" },
-    { name: "Warner" },
-    { name: "Perry" }
+    { name: "Smith",age:22 },
+    { name: "July",age:34 },
+    { name: "Sara",age:45 },
+    { name: "Starc",age:23 },
+    { name: "Elizabeth",age:28 },
+    { name: "Warner",age:18 },
+    { name: "Perry" ,age:26}
   ];
 
   return (
     <FlatList
-    horizontal
-    showsHorizontalScrollIndicator={false}
     keyExtractor = {friend=>friend.name}
       data={friends}
       renderItem={({ item }) => {
-        //if funciton argument value is element then , element !== {item:{name:"friend#1"},index:0}
+        //if funciton argument value is element then , element !== {item:{name:"friend#1,age:22"},index:0}
         // item === {name:"friends#1"}
-        return <Text style={styles.textStyle}>{item.name}</Text>;
+        return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>;
       }}
     ></FlatList>
   );
@@ -29,8 +27,12 @@ const ListComponents = () => {
 
 const styles = StyleSheet.create({
     textStyle:{
-        marginVertical:50,
-        marginHorizontal:20
+        fontSize:20,
+        paddingHorizontal:5,
+        paddingVertical:40,
+        backgroundColor:'#aaa',
+        borderColor:"green",
+        borderWidth:1,
     }
 });
 

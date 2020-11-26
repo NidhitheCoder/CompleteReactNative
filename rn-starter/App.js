@@ -13,7 +13,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "List",
     defaultNavigationOptions: {
-      title: "App"
+      title: "FRIENDS"
     }
   }
 );
