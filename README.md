@@ -61,3 +61,14 @@
 - showsHorizontalScrollIndicator={false}  helps to avoid scollbar at the bottom of the app.
 - marginVertical for vertical padding or gap between items.
 - marginHorizontal for vertical padding or gap between items.
+
+## Buttons with react native
+- 2 different ways to show button to user are: Button,TouchableOpacity
+- Button : Very simple component for showing a button and detecting press 
+- TouchableOpacity : Highly customizable component that can detect a press on just about any kind of elements.
+
+- navigate: natigate is a function that we can used to change the content that visible on the screen of our device(props.navigation.navigate)
+
+# State in components
+- Props : System to pass data from a parent to child.
+- State : System to track a piece  of data that will change  over time. If that data changes , Our app will rerender.
