@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.text}>my App </Text>
       <Button
         onPress={() => navigation.navigate("Components")}
-        title="Go To COmponents Demo"
+        title="Go To Components Demo"
       />
       <Button
         onPress={() => navigation.navigate("List")}
@@ -16,6 +16,18 @@ const HomeScreen = ({ navigation }) => {
       <Button
         onPress={() => navigation.navigate("Image")}
         title="Go To Images List"
+      />
+      <Button 
+      onPress={()=>navigation.navigate("Counter")}
+      title="Go To Counter Demo"
+      />
+      <Button
+      onPress={()=>navigation.navigate("Color")}
+      title="Go To Color Demo"
+      />
+      <Button 
+      onPress={()=>navigation.navigate("Square")}
+      title = "Go To Square Demo"
       />
     </View>
   );
