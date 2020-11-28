@@ -100,3 +100,34 @@
     - Reducer always return a value to be used as Argument #1.
 - import React,{useReducer} from 'react';
 
+### TextInput in react native
+- TextInput is helps to take inout from the user .
+- We need to style TextInput component.
+- must needed styles are: autoCapitalize,autoCorrect.
+
+### Layout with react native
+- Box object model, FlexBox, Position
+    1. Box object model
+    - Height,width,margin,padding,spaces.
+    - Use this to affect the positioning of a single element.
+    - margin,marginVertical,marginHorizontal,padding,paddingVertical,PaddingHorizontal,BorderWidth
+    
+    2. Flexbox 
+    - Arrage some number of sibling elements inside a parent element.
+    - Use this to position mutliple elements with a common parent element.
+       * Parent flex properties
+            - alignItems : On parent element default value for alignItems is 'stretch', other values are flex-start ,center,flex-end.
+            - FlexDirection : column,row 
+            - JustifyContent : flex-start(default),center,flex-end,space-between,space-around
+        * Child flex properties
+            - alignSelf : stretch,flex-end,center,flex-start
+            - flex - flex the child elements (with ratio ,eg if 3 elements  we can use value of flex as 4:4:2 for two equal size child and one the half child)
+
+    3. Position
+    - How a single element gets laid out inside of a parent element.
+    - It is override box object model and flexbox.
+    - Default value of position property is relative.
+    - relative,absolute,
+    - top,left,bottom,right properties helps to positioning. 
+    - absoluteFillObject
+        - ...styleSheet.absoluteFillObject

@@ -23,19 +23,28 @@ const styles = StyleSheet.create({
   textOneStyle: {
     borderWidth: 3,
     borderColor: "red",
-    alignSelf:"flex-start"
+    // alignSelf:"flex-start"
     // flex:4
   },
   textTwoStyle: {
     borderWidth: 3,
-    borderColor: "red",
-    alignSelf:"center"
+    borderColor: "blue",
+    // alignSelf:"center"
     // flex:1
+    
+    // position:'absolute',
+    // top:0,
+    // bottom:0,
+    // left:0,
+    // right:0,
+    // for above 5 line we can write like this \/
+    ...StyleSheet.absoluteFillObject,
+    fontSize:20
   },
   textThreeStyle: {
     borderWidth: 3,
     borderColor: "red",
-    alignSelf:"flex-end"
+    // alignSelf:"flex-end"
     // flex:1
   }
 });
