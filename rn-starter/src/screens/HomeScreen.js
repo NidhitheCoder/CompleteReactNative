@@ -17,21 +17,25 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Image")}
         title="Go To Images List"
       />
-      <Button 
-      onPress={()=>navigation.navigate("Counter")}
-      title="Go To Counter Demo"
+      <Button
+        onPress={() => navigation.navigate("Counter")}
+        title="Go To Counter Demo"
       />
       <Button
-      onPress={()=>navigation.navigate("Color")}
-      title="Go To Color Demo"
-      />
-      <Button 
-      onPress={()=>navigation.navigate("Square")}
-      title = "Go To Square Demo"
+        onPress={() => navigation.navigate("Color")}
+        title="Go To Color Demo"
       />
       <Button
-      onPress={()=>navigation.navigate("SquareState")}
-      title= " Go To Square Demo With State" 
+        onPress={() => navigation.navigate("Square")}
+        title="Go To Square Demo"
+      />
+      <Button
+        onPress={() => navigation.navigate("SquareState")}
+        title=" Go To Square Demo With State"
+      />
+      <Button
+        onPress={() => navigation.navigate("Text")}
+        title="Go To Text Demo"
       />
     </View>
   );
