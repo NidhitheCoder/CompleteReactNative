@@ -72,3 +72,31 @@
 # State in components
 - Props : System to pass data from a parent to child.
 - State : System to track a piece  of data that will change  over time. If that data changes , Our app will rerender.
+- we can use state in our app by using 'useState'.
+- import React,{useState} from 'react';
+
+- How to use ?
+     const [counter,setCounter] = useState(defaultValue);
+      - In the above example counter is the storing variable and setCounter is the counter updating function.
+      - setCounter helps to update value of the counter variable.
+        setCounter(5) then, value of the counter is become 5.
+
+- We are using function based state in functional component.
+- We never directly modify a state variable.Use only setter function.
+- We can naming anything as our wish for the variables. But remaind, the order is very important.
+- We can track any kind of data that changes over time.
+- When a component is rendered, all of its childrens get rerendered too.
+- A state variable can  be passed  to a child component ! at that point , the state  variable is now being used as props.
+
+### Introduce reducer
+- Reducer is a fancy name. Reducer is a function that manages changes to an object.
+- Function that get called with Two objects.
+    - Object #1 / Argument #1
+        * Object that has all of our state in it.
+    - Object #2 /Argument #2 
+        * Object that describes the update we want to make.
+        * Argument #2 used for to decide how to change Argument #1.
+    - We never change Argument #1 directly.
+    - Reducer always return a value to be used as Argument #1.
+- import React,{useReducer} from 'react';
+
