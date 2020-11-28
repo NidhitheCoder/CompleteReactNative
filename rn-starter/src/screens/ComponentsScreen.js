@@ -12,7 +12,7 @@ const ComponentsScreen = () => {
     <View>
       <Text style={styles.textStyle}> components screen.</Text>
       <Text style={styles.subHeaderStyle}>Hi there.. Its me {greetings}</Text>
-      <Text >{arrayItems}</Text>
+      <Text>{arrayItems}</Text>
       {txtElement}
     </View>
   );
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "green"
   },
-  subHeaderStyle:{
-    fontSize:20,
+  subHeaderStyle: {
+    fontSize: 20,
     color: "purple",
-    textAlign:"center"
+    textAlign: "center"
   },
-  Text:{
-    textAlign:"center"
+  Text: {
+    textAlign: "center"
   }
 });
 

@@ -61,3 +61,81 @@
 - showsHorizontalScrollIndicator={false}  helps to avoid scollbar at the bottom of the app.
 - marginVertical for vertical padding or gap between items.
 - marginHorizontal for vertical padding or gap between items.
+
+## Buttons with react native
+- 2 different ways to show button to user are: Button,TouchableOpacity
+- Button : Very simple component for showing a button and detecting press 
+- TouchableOpacity : Highly customizable component that can detect a press on just about any kind of elements.
+
+- navigate: natigate is a function that we can used to change the content that visible on the screen of our device(props.navigation.navigate)
+
+# State in components
+- Props : System to pass data from a parent to child.
+- State : System to track a piece  of data that will change  over time. If that data changes , Our app will rerender.
+- we can use state in our app by using 'useState'.
+- import React,{useState} from 'react';
+
+- How to use ?
+     const [counter,setCounter] = useState(defaultValue);
+      - In the above example counter is the storing variable and setCounter is the counter updating function.
+      - setCounter helps to update value of the counter variable.
+        setCounter(5) then, value of the counter is become 5.
+
+- We are using function based state in functional component.
+- We never directly modify a state variable.Use only setter function.
+- We can naming anything as our wish for the variables. But remaind, the order is very important.
+- We can track any kind of data that changes over time.
+- When a component is rendered, all of its childrens get rerendered too.
+- A state variable can  be passed  to a child component ! at that point , the state  variable is now being used as props.
+
+### Introduce reducer
+- Reducer is a fancy name. Reducer is a function that manages changes to an object.
+- Function that get called with Two objects.
+    - Object #1 / Argument #1
+        * Object that has all of our state in it.
+    - Object #2 /Argument #2 
+        * Object that describes the update we want to make.
+        * Argument #2 used for to decide how to change Argument #1.
+    - We never change Argument #1 directly.
+    - Reducer always return a value to be used as Argument #1.
+- import React,{useReducer} from 'react';
+
+### TextInput in react native
+- TextInput is helps to take inout from the user .
+- We need to style TextInput component.
+- must needed styles are: autoCapitalize,autoCorrect.
+
+### Layout with react native
+- Box object model, FlexBox, Position
+    1. Box object model
+    - Height,width,margin,padding,spaces.
+    - Use this to affect the positioning of a single element.
+    - margin,marginVertical,marginHorizontal,padding,paddingVertical,PaddingHorizontal,BorderWidth
+    
+    2. Flexbox 
+    - Arrage some number of sibling elements inside a parent element.
+    - Use this to position mutliple elements with a common parent element.
+       * Parent flex properties
+            - alignItems : On parent element default value for alignItems is 'stretch', other values are flex-start ,center,flex-end.
+            - FlexDirection : column,row 
+            - JustifyContent : flex-start(default),center,flex-end,space-between,space-around
+        * Child flex properties
+            - alignSelf : stretch,flex-end,center,flex-start
+            - flex - flex the child elements (with ratio ,eg if 3 elements  we can use value of flex as 4:4:2 for two equal size child and one the half child)
+
+    3. Position
+    - How a single element gets laid out inside of a parent element.
+    - It is override box object model and flexbox.
+    - Default value of position property is relative.
+    - relative,absolute,
+    - top,left,bottom,right properties helps to positioning. 
+    - absoluteFillObject
+        - ...styleSheet.absoluteFillObject
+
+
+## Project generation
+- We have two different options for new project generations
+    * expo-cli
+        - Add in a ton of default config to use features common in apps,like icons,video,better camera use, etc..
+    * react-native-cli
+        - Default CLI to generate a project . require a lot of extra work to add in common features.
