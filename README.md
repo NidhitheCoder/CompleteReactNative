@@ -139,3 +139,11 @@
         - Add in a ton of default config to use features common in apps,like icons,video,better camera use, etc..
     * react-native-cli
         - Default CLI to generate a project . require a lot of extra work to add in common features.
+- To create new project
+    'npx expo-cli init food'
+
+### 3 Types of navigators
+- Bottom navigator,drower navigator and the stack navigator.
+- How to install ?
+    'npm install react-navigation'
+    
