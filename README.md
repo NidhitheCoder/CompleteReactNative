@@ -131,3 +131,11 @@
     - top,left,bottom,right properties helps to positioning. 
     - absoluteFillObject
         - ...styleSheet.absoluteFillObject
+
+
+## Project generation
+- We have two different options for new project generations
+    * expo-cli
+        - Add in a ton of default config to use features common in apps,like icons,video,better camera use, etc..
+    * react-native-cli
+        - Default CLI to generate a project . require a lot of extra work to add in common features.
