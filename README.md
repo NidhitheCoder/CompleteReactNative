@@ -140,10 +140,37 @@
     * react-native-cli
         - Default CLI to generate a project . require a lot of extra work to add in common features.
 - To create new project
-    'npx expo-cli init food'
+
+    ```
+        'npx expo-cli init food'
+        or 
+        'npx expo-cli init food --npm' // helps to avoid mix with yarn and npm
+     ```
 
 ### 3 Types of navigators
 - Bottom navigator,drower navigator and the stack navigator.
 - How to install ?
-    'npm install react-navigation'
-    
+
+    ```
+        'npm install react-navigation' 
+    ```
+
+- for install Glesure
+    npm install react-native-gesture-handler
+
+- npm i react-navigation-stack   //or yarn add react-navigation-stack
+
+
+### Axios and fetch
+- Axios and Fetch are the two ways main to make network requests in react.
+    1. Fetch 
+        - Fetch is a buildin function  for making network requests. Error handiling is a little bit wierd.
+        - Require us to write lots of wrapper code to make it work sensibly.
+    2. Axios
+        - Axios is the separate library for making requests.
+        - Axios is easy to use and sensible defaults.
+        - It increases our app size.
+
+### useEffect
+- UseEffect is a hook or essentially a function that allows us to run some snippet od code just one time when our component is first rendered to the screen.
+            
