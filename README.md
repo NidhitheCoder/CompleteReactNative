@@ -173,4 +173,41 @@
 
 ### useEffect
 - UseEffect is a hook or essentially a function that allows us to run some snippet od code just one time when our component is first rendered to the screen.
-            
+
+## Props
+
+- Communicat information  from a parent directly down a child.
+- Easy to setup.
+- To communicate data down multiple layers, we have to write a lots of code.
+
+## Context
+
+- Context is using for moving information from a parent to some nested child.
+- Complied to setup. lots of special terms.
+- Easy to communicate data from a parent to a super  nested child.
+
+## navigation.pop
+- The pop function is essentially pops off the current view off of a stack of current views  that the user is looking at.
+
+## json-server with ngrok (connect json server with outside our local mechine)
+- Create a directory
+- Run 'npm init' for get package.json file.
+- Run 'npm install json-server ngrok' for node modules and package-lock.json files.
+- And inside the directory create a file with the name 'db.json'.
+- add content to the db.json
+    - example :
+        {
+            "blogposts":[]
+        }
+    - In this example I created an object key in the name of blogposts and add  an empty array as the value.This key is the endpoint for the server fetching url.
+- In package.json, change script key as :
+
+    - "db":"json-server -w db.json"
+      "tunnel" : "ngrok http 3000"
+      
+- run with this commands in directory terminal:
+
+    - 'npm run db' - Iinside the world.
+    - 'npm run tunnel' - For outside the world.
+
+
