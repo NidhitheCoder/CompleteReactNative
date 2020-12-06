@@ -210,4 +210,57 @@
     - 'npm run db' - Iinside the world.
     - 'npm run tunnel' - For outside the world.
 
+## Express Server & API
+- Create a Directory and run 'npm init -y' command for generate package.json.
+- Run 'npm install bcrypt express jsonwebtoken mongoose nodemon' for installing dependencies.
+- Create a folder src and create root file 'index.js'.
+    example content in index.js:
+    ```
+        const express = require('express');
+        const app = express();
 
+        app.get('/',(req,res)=>{
+            res.send("Hii there");
+        });
+
+        app.listen(3000,()=>{
+            console.log("Listening on port 3000");
+        });
+
+    ```
+- To run 'node src/index.js'.
+- Mongoose is a library for helping to working express and mongodb together.
+
+## Mongodb setup
+- cloud.mongodb.com : Helps to free hosted MongoDB instance.
+- in package .json change the script section to 
+   '"dev":"nodemon src/index.js"'
+- 'npm run dev'
+
+
+
+
+### JSON WEB TOKENS
+- A string that carries  some identifying information.
+- JWT is created using a special    key that only our server knows.
+- It is not possible to create  a new JWT or change  info  in an existing one  without that key.
+
+### Bcrypt
+- Bcrypt for hashing algorithm.
+- Raibow table attack : It is a type of hacking wherein the perpetrator tries to use a rainbow hash table  to crack the passwords stored in a database system.
+- Salting : A cryptographic  salt is made up of random bits added to each password instance before its hashing.
+
+### Navigators
+    1. Stack navigator : Classic back-and-forth between different nested screens.
+    2. Bottom Tab Navigator : Shows a tab bar at  the bottom with Buttons to navigate between different screens.
+    3. Switch navigator : Abrupt, 100% cub between different screens.
+    4. Drower navigator : Shows a fly-out menu from one side of the device.
+
+## react-native-elements Library
+- How to install ?
+
+    ```
+    npm install react-native-elements
+    ```
+- It have pre-build set of common components.
+- Docs and reference: https://reactnativeelements.com/
