@@ -264,3 +264,34 @@
     ```
 - It have pre-build set of common components.
 - Docs and reference: https://reactnativeelements.com/
+
+## Async storage
+- Async storage is a simple,asyncronous, unencrypted by default module that allows to you persist data offline in react native apps.The persistance of data is done in a key-value storage system.
+- setItem(key,value) : storage information on the user's device.
+- getItem(key) : Retrives an item that has been stored.
+- removeItem(key) : remove some stored information.
+
+    - let user = await asyncStorage.getItem('user);
+     let parsedUser = JSON.parse(user);
+     alert(parserUser.email);
+
+## NavigationEvents
+- NavigitonEvents is a react components , we can show its inside of our components.
+- It does not display anything on the screen forever, instead it optionally choose to pass couple of callback functions as props.
+- NavigationEvents is to call them automatically anytime we render or navigte to this screen.
+- onWillFocus : It will be called anytime that we are about to navigate to this  screen.
+- onDidFocus : This will be any time called  anytime that we successfully complete the navigation over the screen.
+- onWillBlur :It will be caleld anytime that we are about to navigate away from the specific screen.
+- onDidBlur : As soon as the transition complete.
+
+## Expo-locations
+- Location service provided by the 'expo-location' library.
+- How to install ?
+
+    ```
+
+    ```
+
+- Before tracking users location, we need to ask for permission.
+- Two forms of location tracking : foreground  and background.
+- We need to extramely aware of when  we are tracking location- it consumes battery power.
