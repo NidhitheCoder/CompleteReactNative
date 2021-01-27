@@ -1,5 +1,31 @@
 # Complete React Native Course
 
+Helpfull note: https://code.tutsplus.com/tutorials/how-to-create-a-react-native-android-app--cms-35636
+               https://blog.codemagic.io/step-by-step-guide-to-kick-off-your-first-react-native-project/
+
+helpful notes for Expo app creation: https://medium.com/swlh/writing-your-really-first-mobile-app-in-react-native-simple-to-do-app-e67f875f0721
+
+commands for create react native app with expo
+**********************************************
+1. npm install -g expo-cli
+2. expo init <Project name/app name>
+3. cd FirstProject
+4. npm start
+5. Once you’ve set up Android Studio or Xcode, you can launch your app on an Android virtual device or real device using        USB by running:
+         npm run android
+
+commands for create react native app with react native CLI
+**********************************************************
+1. npx react-native init FirstProject
+2. cd FirstProject
+3. npx react-native start
+4. Android Studio or Xcode, you can launch your app on an Android virtual device or real device using
+    USB by running:
+        npx react-native run-android
+
+
+
+
 ### requirements
 
 1. Node LTS version
@@ -295,3 +321,38 @@
 - Before tracking users location, we need to ask for permission.
 - Two forms of location tracking : foreground  and background.
 - We need to extramely aware of when  we are tracking location- it consumes battery power.
+
+## useEffect
+-  We Dont want to reference  state,props, or  context values without adding them to our dependency list.
+
+- Example:
+
+    if you have ;
+         props: trackId
+         state: value
+         context : recording
+
+         then, 
+
+         useEffect(()=>{
+             trackId,value,recording
+         },[trackId,value,recording]);
+
+
+- Setter values are very consistent function.
+
+- Don't define helper functions that referance props,state or context outside of useEffect.
+- Example 
+
+    if props: trackId
+
+    const helperFunction()=>{
+        trackId;
+    }
+
+    useEffect(()=>{
+        helperFunction();
+    });
+
+    It is better to define and call helper function inside the useEffect.
+    
