@@ -355,4 +355,22 @@ commands for create react native app with react native CLI
     });
 
     It is better to define and call helper function inside the useEffect.
+
+
+    ## MacOcs Dependencies
+    1. Xcode : Package our code + the react native library into an installable app and run it on the iOs simulator.
+    2. HomeBrew : Used to install node.
+    3. Node/NPM : Node runs javascript outside the browser. NPM is used for installing and managing dependencies. node and NPM come together.
+    4. Watchman : Watch files on hard drive and wait for them to change.
+    5. React Native CLI : React native command line interface. used to generate new react native projects.
+
+    ## React VS React Native
+    1. React
+    - Know how a component should  behave.
+    - Know how to take a bunch of components and make them work together.
+    
+    2. React Native
+    - Knows how to take the output from a component and place it on the screen.
+    - Provides default core components(image,text etc..)
+
     
